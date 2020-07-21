@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">PetagramMMFGP</string>
+    <!--para el actiontoolbar-->
+    <string name="titulo_actiontoolbar">Mascotas</string>
+    <string name="titulo_actiontoolbarf">Mascotas Favoritas</string>
+    <string name="titulo_actiontoolbarc">Contacto</string>
+    <string name="titulo_actiontoolbarAd">Acerca de</string>
+    <!--para el Menu-->
+    <string name="menu_5estrellas">5 Estrellas</string>
+    <string name="menu_contacto">Contacto</string>
+    <string name="menu_acercade">Acerca de</string>
+    <!--para los CardView(Mascota y PerfilMascota)-->
+    <string name="cd_imagen_foto_cvmascota">Imagen de la Foto del CardView</string>
+    <string name="cd_imagen_huesoblanco_cvmascota">Imagen del Hueso Blanco del CardView</string>
+    <string name="nombre_cvmascota">Nombre Mascota</string>
+    <string name="cantidad_like_cvmascota">0</string>
+    <string name="cd_imagen_huesoamarillo_cvmascota">Imagen del Hueso amarillo del CardView</string>
+    <!--para Activity Contacto y Acerca de, y fragment PrfilMascota-->
+    <string name="txtv_Contacto">Datos de Contacto</string>
+    <string name="cd_imagen_contacto">Imagen de Contacto</string>
+    <string name="tiet_Contacto">Nombre Completo</string>
+    <string name="cd_imagen_email">Imagen de Email</string>
+    <string name="tiet_Email">Email</string>
+    <string name="cd_imagen_mensaje">Imagen de Mensaje</string>
+    <string name="tiet_Mensaje">Mensaje</string>
+    <string name="btn_Enviar">Enviar Comentario</string>
+    <string name="email_m">Email del contacto: </string>
+    <string name="comentario">Comentario: </string>
+    <string name="txtv_acercade">Programador</string>
+    <string name="txtv_bionombre">Ibsen Jared Rojas</string>
+    <string name="txtv_biotitulo">Ingeniero En Computacion</string>
+    <string name="txtv_biodescripcion">Nacido en Venezuela - Estado Anzoategui, en el año de 1982. Realizo sus estudios en la Universidad
+        de Oriente Nucleo Anzoategui, obteniendo el Titulo de Ingeniero en Computacion de la Escuela de Ingenieria en Computacion y Sistemas.
+        Se ha desempeñado en el ambito laboral como Ingeniero de Soporte, realizando Mantenimientos Preventivos y Correctivos a Equipos
+        de Computo, y Desarrollador de Software en varios lenguajes de programacion, entre los que destacan: C++, Java, C#, HTML, Android,
+        entre otros. Actualmente amplia los conocimientos en el area de la Programacion Android.
+    </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="nombre_perfilm">Nombre de la Mascota</string>
+    <string name="cd_imagen_foto_perfilm">Imagen de la Foto del Perfil Mascota</string>
+</resources>

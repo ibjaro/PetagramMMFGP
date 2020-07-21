@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--para el actiontoolbar-->
+    <dimen name="tama_titulo_actiontoolbar">20sp</dimen>
+    <dimen name="elevacion_actiotoolbar">4dp</dimen>
+    <dimen name="margen_start_actiontoolbar">20dp</dimen>
+    <!--para el RecyclerView(Mascota y PerfilMascota)-->
+    <dimen name="margen_rvmascotas">25dp</dimen>
+    <!--para los CardView(Mascota y PerfilMascota)-->
+    <dimen name="margen_superior_cvmascotas">20dp</dimen>
+    <dimen name="card_corner_radius_cardview">4dp</dimen>
+    <dimen name="tama_horizontal_foto_cvmascota">285dp</dimen>
+    <dimen name="tama_hori_verti_iconohueso">38dp</dimen>
+    <dimen name="margen_left_rigth_cvmascota">10dp</dimen>
+    <dimen name="nombre_cvmascota">25sp</dimen>
+    <dimen name="cantidad_like_cvmascota">20sp</dimen>
+    <dimen name="tama_horizontal_cvperfilmascota">140dp</dimen>
+    <dimen name="tama_hori_verti_fotoperfilCV">180dp</dimen>
+    <!--para la foto circular del fragment PerfilMascota-->
+    <dimen name="tama_hori_verti_civFotoPerfilMascota">200dp</dimen>
+    <dimen name="civ_border_width">4dp</dimen>
+    <dimen name="civ_shadow_radius">10dp</dimen>
+    <!--para Activity Contacto y Acerca de, y fragment PrfilMascota-->
+    <dimen name="margen_sup_contacto">15dp</dimen>
+    <dimen name="margen_left_right_contacto">10dp</dimen>
+    <dimen name="tama_txtvcontacto">25sp</dimen>
+    <dimen name="margen_sup_btnenviar">10dp</dimen>
+    <dimen name="tama_texto_btnenviar">20sp</dimen>
+    <dimen name="margen_sup_acercade">15dp</dimen>
+    <dimen name="tama_txtvacercade">25sp</dimen>
+    <dimen name="tama_txtv_biotitulotexto">20sp</dimen>
+    <dimen name="tama_txtv_biotexto">15sp</dimen>
+    <dimen name="margen_txtv_biotexto">20dp</dimen>
+    <dimen name="nombre_perfilm">25sp</dimen>
+</resources>

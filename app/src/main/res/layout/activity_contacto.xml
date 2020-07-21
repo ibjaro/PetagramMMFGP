@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Contacto">
+
+    <include
+        android:id="@+id/miActionToolBarC"
+        layout="@layout/actiontoolbar"
+        ></include>
+
+    <TextView
+        android:id="@+id/txtvContacto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margen_sup_contacto"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/txtv_Contacto"
+        android:textStyle="bold"
+        android:textSize="@dimen/tama_txtvcontacto"/>
+
+    <LinearLayout
+        android:id="@+id/lyContacto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/margen_sup_contacto">
+
+        <ImageView
+            android:id="@+id/imgvContacto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margen_left_right_contacto"
+            android:layout_marginLeft="@dimen/margen_left_right_contacto"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/contacto"
+            android:contentDescription="@string/cd_imagen_contacto"
+            />
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilyContacto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margen_left_right_contacto"
+            android:layout_marginLeft="@dimen/margen_left_right_contacto"
+            android:layout_marginEnd="@dimen/margen_left_right_contacto"
+            android:layout_marginRight="@dimen/margen_left_right_contacto">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tietContacto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/tiet_Contacto"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lyEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/margen_sup_contacto">
+
+        <ImageView
+            android:id="@+id/imgvEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margen_left_right_contacto"
+            android:layout_marginLeft="@dimen/margen_left_right_contacto"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/email"
+            android:contentDescription="@string/cd_imagen_email"
+            />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilyEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margen_left_right_contacto"
+            android:layout_marginLeft="@dimen/margen_left_right_contacto"
+            android:layout_marginEnd="@dimen/margen_left_right_contacto"
+            android:layout_marginRight="@dimen/margen_left_right_contacto">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tietEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/tiet_Email"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lyMensaje"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/margen_sup_contacto">
+
+        <ImageView
+            android:id="@+id/imgvMensaje"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margen_left_right_contacto"
+            android:layout_marginLeft="@dimen/margen_left_right_contacto"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/mensaje"
+            android:contentDescription="@string/cd_imagen_mensaje"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilyMensaje"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margen_left_right_contacto"
+            android:layout_marginLeft="@dimen/margen_left_right_contacto"
+            android:layout_marginEnd="@dimen/margen_left_right_contacto"
+            android:layout_marginRight="@dimen/margen_left_right_contacto">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tietMensaje"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/tiet_Mensaje"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnEnviar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margen_sup_btnenviar"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/btn_Enviar"
+        android:theme="@style/miBotonRaiced"
+        android:textSize="@dimen/tama_texto_btnenviar"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

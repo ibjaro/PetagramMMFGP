@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <!-- tools:context=".fragment.PerfilMascota"-->
+    <!-- foto circular del fragment PerfilMascota-->
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/civFotoPerfilMascota"
+        android:layout_width="@dimen/tama_hori_verti_civFotoPerfilMascota"
+        android:layout_height="@dimen/tama_hori_verti_civFotoPerfilMascota"
+        android:src="@drawable/conejo"
+        app:civ_border_color="@color/civ_border_color"
+        app:civ_border_width="@dimen/civ_border_width"
+        app:civ_shadow="true"
+        app:civ_shadow_radius="@dimen/civ_shadow_radius"
+        app:civ_shadow_color="@color/civ_shadow_color"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center_horizontal"
+        />
+    <!-- nombre de la mascota del fragment PerfilMascota-->
+    <TextView
+        android:id="@+id/txtvNombrePerfilM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nombre_perfilm"
+        android:padding="2dp"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textSize="@dimen/nombre_perfilm"
+        />
+    <!-- separador(linea) del fragment PerfilMascota-->
+    <View
+        android:layout_width="250dp"
+        android:layout_height="1dp"
+        android:padding="30dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginEnd="100dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/colorPrimary"
+        />
+    <!-- RecyclerView, para mostrar las fotos con sus respectivos like, del fragment PerfilMascota-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvPerfilMascotas"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:padding="@dimen/margen_rvmascotas"
+        ></androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>

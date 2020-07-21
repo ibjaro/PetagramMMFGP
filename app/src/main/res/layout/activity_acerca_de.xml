@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AcercaDe">
+
+    <include
+        android:id="@+id/miActionToolBarAd"
+        layout="@layout/actiontoolbar"
+        ></include>
+    <!--  foto de perfil para la Bio -->
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/fotoBio"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/fotoperfil"
+        app:civ_border_color="@color/civ_border_color"
+        app:civ_border_width="@dimen/civ_border_width"
+        app:civ_shadow="true"
+        app:civ_shadow_radius="@dimen/civ_shadow_radius"
+        app:civ_shadow_color="@color/civ_shadow_color"
+        android:layout_gravity="center_horizontal"
+        >
+        <!--  android:scaleType="centerCrop" -->
+    </com.mikhaellopez.circularimageview.CircularImageView>
+
+    <TextView
+        android:id="@+id/txtvAcercade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margen_sup_acercade"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/txtv_acercade"
+        android:textSize="@dimen/tama_txtvacercade"
+        android:textStyle="bold"
+        >
+    </TextView>
+    <!-- separador(linea) del Activity AcercaDe-->
+    <View
+        android:layout_width="250dp"
+        android:layout_height="1dp"
+        android:padding="30dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginEnd="100dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/colorPrimary"
+        />
+
+    <TextView
+        android:id="@+id/txtvbioNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/txtv_bionombre"
+        android:textSize="@dimen/tama_txtv_biotitulotexto"
+        android:textStyle="italic"
+        />
+
+    <TextView
+        android:id="@+id/txtvbioTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/txtv_biotitulo"
+        android:textSize="@dimen/tama_txtv_biotitulotexto"
+        android:textStyle="italic"
+        />
+
+    <TextView
+        android:id="@+id/txtvbioDescripcion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/txtv_biodescripcion"
+        android:gravity="center"
+        android:textSize="@dimen/tama_txtv_biotexto"
+        android:textStyle="italic"
+        android:typeface="monospace"
+        android:layout_margin="@dimen/margen_txtv_biotexto"
+        />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

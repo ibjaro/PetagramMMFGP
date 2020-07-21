@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cvMascotas"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/margen_superior_cvmascotas"
+    app:cardCornerRadius="@dimen/card_corner_radius_cardview">
+    <!-- para cuando este como GridLayout podemos poner el lyout_width en 150dp-->
+    <LinearLayout
+        android:id="@+id/lyMascotaCV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="7dp"
+        >
+
+        <ImageView
+            android:id="@+id/imgvFotoCV"
+            android:layout_width="@dimen/tama_horizontal_foto_cvmascota"
+            android:layout_height="wrap_content"
+            android:src="@drawable/elefante"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="@string/cd_imagen_foto_cvmascota"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <ImageButton
+                android:id="@+id/imgbtnLike"
+                android:layout_width="@dimen/tama_hori_verti_iconohueso"
+                android:layout_height="@dimen/tama_hori_verti_iconohueso"
+                android:background="@mipmap/huesoblanco"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="@dimen/margen_left_rigth_cvmascota"
+                android:paddingRight="@dimen/margen_left_rigth_cvmascota"
+                android:contentDescription="@string/cd_imagen_huesoblanco_cvmascota"/>
+
+
+            <TextView
+                android:id="@+id/txvNombreCV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nombre_cvmascota"
+                android:paddingLeft="@dimen/margen_left_rigth_cvmascota"
+                android:paddingRight="@dimen/margen_left_rigth_cvmascota"
+                android:textStyle="bold"
+                android:textSize="@dimen/nombre_cvmascota"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/txvCantidadLikeCV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cantidad_like_cvmascota"
+                    android:paddingLeft="@dimen/margen_left_rigth_cvmascota"
+                    android:paddingRight="@dimen/margen_left_rigth_cvmascota"
+                    android:layout_toStartOf="@+id/imgvCantidadLikeCV"
+                    android:layout_toLeftOf="@id/imgvCantidadLikeCV"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/cantidad_like_cvmascota"/>
+
+                <ImageView
+                    android:id="@+id/imgvCantidadLikeCV"
+                    android:layout_width="@dimen/tama_hori_verti_iconohueso"
+                    android:layout_height="@dimen/tama_hori_verti_iconohueso"
+                    android:scaleType="centerCrop"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="@dimen/margen_left_rigth_cvmascota"
+                    android:paddingRight="@dimen/margen_left_rigth_cvmascota"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:src="@mipmap/huesoamarillo"
+                    android:contentDescription="@string/cd_imagen_huesoamarillo_cvmascota"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

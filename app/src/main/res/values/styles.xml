@@ -1,0 +1,18 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="miActionToolBar" parent="Theme.AppCompat.Light">
+
+    </style>
+    <style name="miBotonRaiced" parent="Theme.AppCompat.Light">
+        <item name="colorButtonNormal">@color/color_btnnormal</item>
+        <item name="colorControlHighlight">@color/color_btnhl</item>
+        <item name="android:textColor">@color/color_btntexto</item>
+    </style>
+
+</resources>

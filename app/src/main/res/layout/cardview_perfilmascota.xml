@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cvPerfilMascota"
+    android:layout_width="@dimen/tama_horizontal_cvperfilmascota"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/margen_superior_cvmascotas"
+    app:cardCornerRadius="@dimen/card_corner_radius_cardview">
+    <!-- en el cardview layout_height="140dp", en la imagen layout_width y height="180dp", y se puede modificar mas-->
+    <!-- para cuando este como GridLayout podemos poner el layout_width(del CardView) en 150dp o 250dp
+    asi veriamos cada CardView separadas y no tan juntas como si tuvieran el valor de wrap_contect-->
+    <LinearLayout
+        android:id="@+id/lyPerfilMascotaCV"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="7dp"
+        >
+        <!-- layout_width="@dimen/tama_horizontal_foto_cvmascota",layout_height="wrap_content"
+        scaleType="fitCenter"(Centro de ajuste) o "centerInside"(Centrarse en el interior)-->
+        <ImageView
+            android:id="@+id/imgvFotoPerfilCV"
+            android:layout_width="@dimen/tama_hori_verti_fotoperfilCV"
+            android:layout_height="@dimen/tama_hori_verti_fotoperfilCV"
+            android:src="@drawable/conejo"
+            android:scaleType="fitCenter"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="@string/cd_imagen_foto_cvmascota"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/txvCantidadLikePerfilCV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cantidad_like_cvmascota"
+                android:paddingLeft="@dimen/margen_left_rigth_cvmascota"
+                android:paddingRight="@dimen/margen_left_rigth_cvmascota"
+                android:layout_toStartOf="@+id/imgvCantidadLikePerfilCV"
+                android:layout_toLeftOf="@id/imgvCantidadLikePerfilCV"
+                android:textStyle="bold"
+                android:textSize="@dimen/cantidad_like_cvmascota"/>
+
+            <ImageView
+                android:id="@+id/imgvCantidadLikePerfilCV"
+                android:layout_width="@dimen/tama_hori_verti_iconohueso"
+                android:layout_height="@dimen/tama_hori_verti_iconohueso"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="@dimen/margen_left_rigth_cvmascota"
+                android:paddingRight="@dimen/margen_left_rigth_cvmascota"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/huesoamarillo"
+                android:contentDescription="@string/cd_imagen_huesoamarillo_cvmascota"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
